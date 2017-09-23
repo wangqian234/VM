@@ -1,0 +1,93 @@
+
+ <article style="margin-top: 70px;">
+ <form ng-submit="addBusNeed()" method="post" enctype="multipart/form-data">
+     <ul class="form-box">
+			 <li class="inner">
+                    <div class="item-name">联系电话：</div>
+                    <div class="item-value">
+                     <div class="input-wrap">
+                            <input type="text" ng-model="BusLimit.bune_tel" required>
+                        </div>
+                    </div>
+                </li>
+				 <li class="inner">
+                    <div class="item-name">乘车人数(人)：</div>
+                    <div class="item-value">
+                        <div class="input-wrap">
+                            <input type="text" ng-model="BusLimit.bune_num"  ng-pattern="/^[a-zA-Z]$/" required>
+                        </div>
+                    </div>
+                </li>
+                <li class="inner">
+                    <div class="item-name">用车时长（天）：</div>
+                    <div class="item-value">
+                    <div class="input-wrap">
+                            <input type="text" ng-model="BusLimit.bune_time" required>
+                        </div>
+                       
+                    </div>
+                </li>
+                 <li class="inner">
+                    <div class="item-name">出发时间：</div>
+                    <div class="item-value">
+                    <div class="input-wrap">
+                            <input type="text" name="startTime" ng-model="BusLimit.bune_gath_time"
+						class="dfselect dateLayoutStyle" 
+						onFocus="WdatePicker(WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd',readOnly:'true',onpicked: function(){$(this).trigger('change')}})) " required>
+						
+                        </div>
+                       
+                    </div>
+                </li>
+                 <li class="inner">
+                    <div class="item-name">出发地点：</div>
+                    <div class="item-value">
+                    <div class="input-wrap">
+                            <input type="text" ng-model="BusLimit.bune_gath_pla" required>
+                        </div>
+                       
+                    </div>
+                </li>
+                <li class="inner">
+                    <div class="item-name">目的地点：</div>
+                    <div class="item-value">
+                    <div class="input-wrap">
+                            <input type="text" ng-model="BusLimit.bune_goal_pla" required>
+                        </div>
+                       
+                    </div>
+                </li>
+                 <li class="inner innerP">
+                    <div class="item-name">包车用途：</div>
+                    <div class="item-value">
+                        <div class="p-wrap">
+                           <textarea  ng-model="BusLimit.bune_purp" required></textarea>
+                        </div>
+                    </div>
+                </li>
+                <li class="inner innerP">
+                    <div class="item-name">其他备注：</div>
+                    <div class="item-value">
+                        <div class="p-wrap">
+                           <textarea ng-model="BusLimit.bune_remark"></textarea>
+                        </div>
+                    </div>
+                </li>
+				<!-- <li class="inner">
+                    <div class="item-name">同意租赁条款：</div>
+                    <div class="item-value">
+                        <input type="checkbox"/>
+                    </div>
+                </li> -->
+				<li class="inner">
+                    
+                    <div class="item-value" style="margin-right:90px">
+                         <div class="a-wrap">
+					           <input type="submit" class="weui_btn weui_btn_primary" value="提交" >
+
+                         </div>
+                    </div>
+                </li>
+            </ul>
+            </form>
+        </article>
