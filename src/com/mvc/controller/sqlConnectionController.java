@@ -33,9 +33,13 @@ public class sqlConnectionController {
 			   System.out.println(rs.getRow());
 			   list=rs.getString("Detector_Equipment_No");
 			   list+=rs.getString("Detector_Equipment_Name");
+			   continue;
 		   }
 		   System.out.println(list);
 		    System.out.println("连接数据库成功");
+		    dbConn.close();
+		    stmt.close();
+		    rs.close();
 		  }
 		  catch(Exception e)
 		  {
