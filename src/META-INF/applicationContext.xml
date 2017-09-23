@@ -36,7 +36,7 @@
 		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 
 	<!-- Jpa 事务配置 -->
- 	<bean class="org.springframework.orm.jpa.JpaTransactionManager"
+	<bean class="org.springframework.orm.jpa.JpaTransactionManager"
 		id="transactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
@@ -45,7 +45,7 @@
 		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 		<property name="showSql" value="true" />
 		<property name="database" value="${database}" />
-		<property name="databasePlatform" value="org.hibernate.dialect.SQLServerDialect" />
+		<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />
 	</bean>
 	<!-- JPA实体管理工厂的配置 -->
 	<bean
@@ -74,6 +74,7 @@
 	<!-- Spring Data Jpa配置 -->
 	<jpa:repositories base-package="com.mvc.repository"
 		entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
+
 	<!-- 配置事务属性 -->
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
@@ -84,6 +85,7 @@
 			<!--<tx:method name="delete*" propagation="REQUIRED" /> -->
 			<tx:method name="count*" propagation="REQUIRED" />
 			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
 		</tx:attributes>
 	</tx:advice>
 
