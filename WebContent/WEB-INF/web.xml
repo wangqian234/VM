@@ -16,7 +16,7 @@
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
   <session-config>
-    <session-timeout>30</session-timeout>
+    <session-timeout>5</session-timeout>
   </session-config>
   <filter>
     <filter-name>encodingFilter</filter-name>
@@ -45,6 +45,18 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:META-INF/springmvc.xml</param-value>
     </init-param>
+    <init-param>
+      <param-name>appid</param-name>
+      <param-value>your appid</param-value>
+    </init-param>
+    <init-param>
+      <param-name>appsecret</param-name>
+      <param-value>your appsecret</param-value>
+    </init-param>
+    <init-param>
+      <param-name>response_type</param-name>
+      <param-value>your code</param-value>
+    </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
@@ -52,6 +64,6 @@
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>routeController/toPage.do</welcome-file>
   </welcome-file-list>
 </web-app>
