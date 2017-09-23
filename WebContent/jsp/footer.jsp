@@ -20,4 +20,4 @@
 <script type="text/javascript"
 	src="${ctx}/js/lib/angular/angular-route.js"></script>
 <!-- Javascript -->
-<%-- <script type="text/javascript" src="${ctx}/js/app.js"></script> --%>
+<script type="text/javascript" src="${ctx}/js/app.js"></script> 

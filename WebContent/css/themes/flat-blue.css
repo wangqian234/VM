@@ -28,7 +28,7 @@
       .flat-blue .navbar .navbar-nav > li > a, .flat-blue .navbar.navbar-default .navbar-nav > li > a {
         color: #353d47; }
     .flat-blue .navbar .navbar-nav > li:hover > a, .flat-blue .navbar.navbar-default .navbar-nav > li:hover > a {
-      color: #22A7F0; }
+      color: rgba(124, 189, 187, 1); }
     .flat-blue .navbar .navbar-nav > li.open > a, .flat-blue .navbar.navbar-default .navbar-nav > li.open > a {
       background-color: transparent;
       color: #22A7F0; }

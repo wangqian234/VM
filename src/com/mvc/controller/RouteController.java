@@ -31,17 +31,14 @@ public class RouteController extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	  public static HttpSession getSession() { 
-          HttpSession session = null; 
-           try { 
-                session = getRequest().getSession(); 
-            } catch (Exception e) {} 
-              return session; 
-       } 
-
-     public static HttpServletRequest getRequest() { 
-           ServletRequestAttributes attrs =(ServletRequestAttributes) RequestContextHolder.getRequestAttributes(); 
-           return attrs.getRequest(); 
-     }
+     
+    @RequestMapping("/toLoginPage.do")
+ 	public String toLoginPage() {
+ 		return "index";
+ 	}
+    
+    @RequestMapping("/toTestPage.do")
+    public String toTestPage() {
+ 		return "test/index";
+ 	}
 }
