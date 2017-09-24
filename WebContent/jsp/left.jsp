@@ -1,3 +1,6 @@
+﻿<script type="text/javascript" src="${ctx}/js/lib/jquery-1.9.1.min.js"></script>
+<script type="text/javascript"
+	src="${ctx}/js/lib/jquery.json-2.2.min.js"></script>
 <div class="side-menu sidebar-inverse">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="side-menu-container">
@@ -23,7 +26,7 @@
 					<div id="dropdown-element" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="${ctx}/routeController/toTestPage.do#/testIndex">Theming</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/testIndex">张群</a></li>
 								<li><a href="ui-kits/grid.html">Grid</a></li>
 								<li><a href="ui-kits/button.html">Buttons</a></li>
 								<li><a href="ui-kits/card.html">Cards</a></li>

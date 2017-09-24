@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="user")
 public class User {
 private Integer user_id;//用户ID
 private String user_openId;//用户openId
