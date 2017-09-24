@@ -15,9 +15,9 @@
 				</button>
 			</div>
 			<ul class="nav navbar-nav">
-				<!-- <li class="active"><a href="index.html"> <span
-						class="icon fa fa-tachometer"></span><span class="title">公元物业管理平台</span>
-				</a></li> -->
+				<li class="active"><a href="index.html"> <span
+						class="icon fa fa-tachometer"></span><span class="title">首页</span>
+				</a></li>
 				<li class="panel panel-default dropdown">
 				<a data-toggle="collapse" href="#dropdown-element"> 
 					<span class="icon fa fa-desktop"></span><span class="title">设备基本信息</span>
@@ -26,8 +26,8 @@
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
 								<li><a href="${ctx}/routeController/toTestPage.do#/testIndex">展会演示</a></li>
-								<li><a href="">清远凤城郦都</a></li>
-								<li><a href="">光明迈瑞</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -38,9 +38,9 @@
 					<div id="dropdown-table" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="">展会演示</a></li>
-								<li><a href="">清远凤城郦都</a></li>
-								<li><a href="">光明迈瑞</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -51,9 +51,9 @@
 					<div id="dropdown-form" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -66,8 +66,9 @@
 					<div id="component-example" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
@@ -79,8 +80,9 @@
 					<div id="dropdown-example" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>

@@ -39,6 +39,22 @@ public class RouteController extends HttpServlet {
     
     @RequestMapping("/toTestPage.do")
     public String toTestPage() {
- 		return "test/index";
+ 		return "1baseInfo/index";
  	}
+    @RequestMapping("/toOperaPage.do")
+    public String toOperaPage(){
+    	return "2operaState/index";
+    }
+    @RequestMapping("/toErrorPage.do")
+    public String toErrorPage(){
+    	return "3errorState/index";
+    }
+    @RequestMapping("/toPrePage.do")
+    public String toPrePage(){
+    	return "4preMain/index";
+    }
+    @RequestMapping("/toEvalPage.do")
+    public String toEvalPage(){
+    	return "5evalState/index";
+    }
 }

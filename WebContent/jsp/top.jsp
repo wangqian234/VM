@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="${ctx}/lib/css/select2.min.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="${ctx}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${ctx}/css/vmcss.css">
     <link rel="stylesheet" type="text/css" href="${ctx}/css/themes/flat-blue.css">
 </head>
 
@@ -32,19 +33,31 @@
                             <i class="fa fa-bars icon"></i>
                         </button>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active" style="width:150px;text-align:center;"><a>供配电系统</a></li>
+                            <li class="active" style="width:150px;text-align:center;">
+                            <a href="http://www.baidu.com">
+                            <p class="{true:'active',false:'inactive'}[show.isActive0]" onclick="changeBar(0)">供配电系统</p>
+                            </a></li>
                         </ol>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active" style="width:150px;text-align:center;">给排水系统</li>
+                            <li class="active" style="width:150px;text-align:center;">
+                            <a href="">
+                            <p class="{true:'active',false:'inactive'}[show.isActive1]" onclick="changeBar(1)">给排水系统</p>
+                            </a></li>
                         </ol>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active" style="width:150px;text-align:center;">中央空调系统</li>
+                            <li class="active" style="width:150px;text-align:center;">
+                            <a href="">
+                            <p class="{true:'active',false:'inactive'}[show.isActive2]" onclick="changeBar(2)">中央空调系统</p></a></li>
                         </ol>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active" style="width:150px;text-align:center;">电梯系统</li>
+                            <li class="active" style="width:150px;text-align:center;">
+                            <a href=""">
+                            <p class="{true:'active',false:'inactive'}[show.isActive3]" onclick="changeBar(3)">电梯系统</p></a></li>
                         </ol>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li class="active" style="width:150px;text-align:center;">消防系统</li>
+                            <li class="active" style="width:150px;text-align:center;">
+                            <a href="">
+                            <p class="{true:'active',false:'inactive'}[show.isActive4]" onclick="changeBar(4)">消防系统</p></a></li>
                         </ol>
                         
                         <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
@@ -92,5 +105,55 @@
                     </ul>
                 </div>
             </nav>
-
+<script>
+function changeBar(state){
+	
+				switch(state){
+				case 0:
+					show={
+						isActive0:true,
+						isActive1:false,
+						isActive2:false,
+						isActive3:false,
+						isActive4:false
+				}
+				case 1:
+					show={
+						isActive0:false,
+						isActive1:true,
+						isActive2:false,
+						isActive3:false,
+						isActive4:false
+				}
+					
+					break;
+				case 2:
+					show={
+						isActive0:false,
+						isActive1:false,
+						isActive2:true,
+						isActive3:false,
+						isActive4:false
+				}
+					break;
+				case  3:
+					show={
+						isActive1:false,
+						isActive2:false,
+						isActive3:true,
+						isActive4:false
+				}
+					break;
+				case  4:
+					show={
+						isActive0:false,
+						isActive1:false,
+						isActive2:false,
+						isActive3:false,
+						isActive4:true
+				}
+					break;
+				}
+			}
+</script>		
 	<section>
