@@ -27,7 +27,7 @@ public class sqlConnectionController {
 		   Class.forName(database.DRIVERCLASSNAME);
 		   Connection dbConn=DriverManager.getConnection(database.URL,database.USERNAME,database.PASSWORD);
 		   Statement stmt=dbConn.createStatement();
-		   String sql="select * from [gywygl].[dbo].[Detector_Equipment] where [Detector_Equipment_Id] = 1";
+		   String sql="select  TOP 10  * from [gywygl].[dbo].[Detector_Equipment] ;";
 		   ResultSet rs=stmt.executeQuery(sql);
 		   while(rs.next()){
 			   System.out.println(rs.getRow());
