@@ -66,8 +66,8 @@ app.run([ '$rootScope', '$location', function($rootScope, $location) {
 // 路由配置
 app.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.when('/testIndex', {
-		templateUrl : '/VM/jsp/test/test.html',
-		controller : 'testController'
+		templateUrl : '/VM/jsp/baseInfo/test.html',
+		controller : 'baseInfoController'
 	})
 } ]);
 
@@ -85,17 +85,15 @@ app.factory('services', [ '$http', 'baseUrl', function($http, baseUrl) {
 
 	return services;
 } ]);
-app.controller('testController', [ '$scope', 'services', '$location',
+app.controller('baseInfoController', [ '$scope', 'services', '$location',
 		function($scope, services, $location) {
-			var test = $scope;
+			var baseInfo = $scope;
 
 			// zq初始化
 			function initPage() {
 				console.log("初始化页面信息");
 				if ($location.path().indexOf('/testIndex') == 0) {
-					alert("jinliale");
-				} else if ($location.path().indexOf('/busNeedList') == 0) {
-					openScroll(getBusNeedsList, {});
+					
 				}
 			}
 			initPage();

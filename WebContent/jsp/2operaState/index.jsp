@@ -15,12 +15,11 @@
 	</div>
 </div>
 </div>
-</div>
 <jsp:include page="/jsp/footer.jsp" />
 </div>
 
 </div>
 </div>
-<script src="${ctx}/js/vmjs/test.js"></script>
+<script src="${ctx}/js/vmjs/2operaState.js"></script>
 </body>
 </html>

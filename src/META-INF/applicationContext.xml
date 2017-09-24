@@ -45,7 +45,7 @@
 		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 		<property name="showSql" value="true" />
 		<property name="database" value="${database}" />
-		<property name="databasePlatform" value="org.hibernate.dialect.SQLServerDialect" />
+		<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />
 	</bean>
 	<!-- JPA实体管理工厂的配置 -->
 	<bean

@@ -1,0 +1,117 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div class="card">
+
+			<div class="card-body no-padding">
+				<div role="tabpanel">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li ng-click="selectEquipList(0)" role="presentation" class="active"><a href=""
+							aria-controls="home" role="tab" data-toggle="tab">供配电系统</a></li>
+						<li ng-click="selectEquipList(1)" role="presentation"><a ng-click="" href=""
+							aria-controls="profile" role="tab" data-toggle="tab">给排水系统</a></li>
+						<li ng-click="selectEquipList(2)" role="presentation"><a ng-click="" href=""
+							aria-controls="messages" role="tab" data-toggle="tab">中央空调系统</a></li>
+						<li ng-click="selectEquipList(3)" role="presentation"><a ng-click="" href=""
+							aria-controls="settings" role="tab" data-toggle="tab">电梯系统</a></li>
+						<li ng-click="selectEquipList(4)" role="presentation"><a ng-click="" href=""
+							aria-controls="settings" role="tab" data-toggle="tab">消防系统</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="col-sm-6">
+							<div class="sub-title">
+								设备列表<span class="description"></span>
+							</div>
+							<table id="infoList" class="table table-striped">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>设备名称</th>
+										<th>设备类型</th>
+										<th>下次维修日期</th>
+										<th>预测寿命</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-click="change(1)">
+										<th scope="row">1</th>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+										<td>Otto</td>
+
+									</tr>
+									<tr ng-click="change()">
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>Thornton</td>
+
+									</tr>
+									<tr ng-click="change()">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td>the Bird</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-6">
+							<div class="sub-title">
+								设备详情<span class="description"></span>
+							</div>
+							<table class="table table-bordered" style="text-align: center">
+								<thead>
+									<!-- <tr>
+                                                        <th>3#变压器</th>
+                                                        <th>First Name</th>
+                                                        <th>Last Name</th>
+                                                        <th>Username</th>
+                                                    </tr> -->
+								</thead>
+								<tbody>
+									<tr>
+										<td>名称：</td>
+										<td>Mark</td>
+										<td>类型：</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>场所：</td>
+										<td>Mark</td>
+										<td>版本：</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>价格：</td>
+										<td>Mark</td>
+										<td>制造商：</td>
+										<td>@mdo</td>
+									</tr>
+									<!-- <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                       <th scope="row">2</th>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Larry</td>
+                                                       <th scope="row">2</th>
+                                                        <td>@twitter</td>
+                                                    </tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

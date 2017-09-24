@@ -4,10 +4,10 @@
 <div class="side-menu sidebar-inverse">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="side-menu-container">
-			<div class="navbar-header">
+			<div class="navbar-header"  style="background-color:rgba(124, 189, 187, 1)" >
 				<a class="navbar-brand" href="#">
-					<div class="icon fa fa-paper-plane"></div>
-					<div class="title">Flat Admin V.2</div>
+					<div class="icon"><img src="/VM/img/lg2-50.png"  height="25" width="25"/></div>
+					<div class="title">公元物业管理平台</div>
 				</a>
 				<button type="button"
 					class="navbar-expand-toggle pull-right visible-xs">
@@ -16,98 +16,80 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="index.html"> <span
-						class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
+						class="icon fa fa-tachometer"></span><span class="title">首页</span>
 				</a></li>
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#dropdown-element"> <span
-						class="icon fa fa-desktop"></span><span class="title">UI
-							Kits</span>
+				<li class="panel panel-default dropdown">
+				<a data-toggle="collapse" href="#dropdown-element"> 
+					<span class="icon fa fa-desktop"></span><span class="title">设备基本信息</span>
 				</a> <!-- Dropdown level 1 -->
 					<div id="dropdown-element" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="${ctx}/routeController/toTestPage.do#/testIndex">张群</a></li>
-								<li><a href="ui-kits/grid.html">Grid</a></li>
-								<li><a href="ui-kits/button.html">Buttons</a></li>
-								<li><a href="ui-kits/card.html">Cards</a></li>
-								<li><a href="ui-kits/list.html">Lists</a></li>
-								<li><a href="ui-kits/modal.html">Modals</a></li>
-								<li><a href="ui-kits/alert.html">Alerts & Toasts</a></li>
-								<li><a href="ui-kits/panel.html">Panels</a></li>
-								<li><a href="ui-kits/loader.html">Loaders</a></li>
-								<li><a href="ui-kits/step.html">Tabs & Steps</a></li>
-								<li><a href="ui-kits/other.html">Other</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toTestPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#dropdown-table"> <span
-						class="icon fa fa-table"></span><span class="title">Table</span>
+				<li class="panel panel-default dropdown">
+				<a data-toggle="collapse" href="#dropdown-table">
+					<span class="icon fa fa-table"></span><span class="title">设备运行状态信息</span>
 				</a> <!-- Dropdown level 1 -->
 					<div id="dropdown-table" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="table/table.html">Table</a></li>
-								<li><a href="table/datatable.html">Datatable</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toOperaPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#dropdown-form"> <span
-						class="icon fa fa-file-text-o"></span><span class="title">Form</span>
+				<li class="panel panel-default dropdown">
+				<a data-toggle="collapse" href="#dropdown-form">
+					<span class="icon glyphicon glyphicon-exclamation-sign"></span><span class="title">设备异常状态报警</span>
 				</a> <!-- Dropdown level 1 -->
 					<div id="dropdown-form" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="form/ui-kits.html">Form UI Kits</a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toErrorPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
 
 				<!-- Dropdown-->
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#component-example"> <span
-						class="icon fa fa-cubes"></span><span class="title">Components</span>
+				<li class="panel panel-default dropdown">
+				<a data-toggle="collapse" href="#component-example">
+					<span class="icon fa fa-cubes"></span><span class="title">设备预测性维修保障策略分析</span>
 				</a> <!-- Dropdown level 1 -->
 					<div id="component-example" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="components/pricing-table.html">Pricing
-										Table</a></li>
-								<li><a href="components/chartjs.html">Chart.JS</a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toPrePage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
 				<!-- Dropdown-->
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#dropdown-example"> <span
-						class="icon fa fa-slack"></span><span class="title">Page
-							Example</span>
+				<li class="panel panel-default dropdown">
+				<a data-toggle="collapse" href="#dropdown-example">
+					<span class="icon fa fa-slack"></span><span class="title">设备健康状态评估</span>
 				</a> <!-- Dropdown level 1 -->
 					<div id="dropdown-example" class="panel-collapse collapse">
 						<div class="panel-body">
 							<ul class="nav navbar-nav">
-								<li><a href="pages/login.html">Login</a></li>
-								<li><a href="pages/index.html">Landing Page</a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/testIndex">展会演示</a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/qingyuan">清远凤城郦都</a></li>
+								<li><a href="${ctx}/routeController/toEvalPage.do#/guangming">光明迈瑞</a></li>
 							</ul>
 						</div>
 					</div></li>
 				<!-- Dropdown-->
-				<li class="panel panel-default dropdown"><a
-					data-toggle="collapse" href="#dropdown-icon"> <span
-						class="icon fa fa-archive"></span><span class="title">Icons</span>
-				</a> <!-- Dropdown level 1 -->
-					<div id="dropdown-icon" class="panel-collapse collapse">
-						<div class="panel-body">
-							<ul class="nav navbar-nav">
-								<li><a href="icons/glyphicons.html">Glyphicons</a></li>
-								<li><a href="icons/font-awesome.html">Font Awesomes</a></li>
-							</ul>
-						</div>
-					</div></li>
-				<li><a href="license.html"> <span
+				<!-- <li><a href="license.html"> <span
 						class="icon fa fa-thumbs-o-up"></span><span class="title">License</span>
-				</a></li>
+				</a></li> -->
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
