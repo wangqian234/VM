@@ -17,6 +17,7 @@
 <script type="text/javascript" src="${ctx}/lib/js/ace/mode-html.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/ace/theme-github.js"></script>
 <script type="text/javascript" src="${ctx}/js/lib/angular/angular.js"></script>
+<script type="text/javascript" src="${ctx}/js/lib/highcharts.js"></script>
 <script type="text/javascript"
 	src="${ctx}/js/lib/angular/angular-route.js"></script>
 <!-- Javascript -->
