@@ -1,14 +1,5 @@
 package com.mvc.controller;
 
-<<<<<<< HEAD
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-=======
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -19,36 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
->>>>>>> 398ee7cd106ad12737b263d6abe7c266a95f7f8b
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-<<<<<<< HEAD
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import com.mvc.entityReport.User;
-import com.utils.OpenidUtil;
-
-/**
- * 路由跳转相关
- * 
- * @author
- * @date 2017年8月9日
- */
-@Controller
-@RequestMapping("/baseInfoController")
-public class baseInfoController extends HttpServlet {
-
-	
-    @RequestMapping("/selectBaseList.do")
-    public String toEvalPage(){
-    	
-    	System.out.println("asdasdasd");
-    	return "1baseInfo/index";
-    }
-=======
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.base.constants.database;
@@ -70,6 +35,7 @@ public class baseInfoController {
 		String project = request.getParameter("project");
 		String facility = request.getParameter("facility");
 		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+		List<Map<String, String>> listmap = new ArrayList<Map<String, String>>();
 		Map<String, String> map = new HashMap<String, String>();
 		JSONObject jsonObject = new JSONObject();
 		//TODO
@@ -120,14 +86,12 @@ public class baseInfoController {
 		//首先判断Detector_Sensor_Type是否为状态值:1为运行状态信息、2为报警信息
 		for(int i = 0 ; i < list.size() ; i++) {
 			if(list.get(i).get("Detector_Sensor_Type") == "2"){
-				jsonObject.put(list.get(i).get("Detector_Equipment_Name"), list.get(i));
+				listmap.add(list.get(i));
 				list.remove(i);
-				break;
 			};
 		}
-		jsonObject.put(list.get(0).get("Detector_Equipment_Name"), list);
-		
+		jsonObject.put(list.get(0).get("报警信息"), listmap);
+		jsonObject.put(list.get(0).get("设备信息"), list);
 		return jsonObject.toString();
 	}
->>>>>>> 398ee7cd106ad12737b263d6abe7c266a95f7f8b
 }

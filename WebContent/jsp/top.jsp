@@ -44,51 +44,14 @@
 						<button type="button" class="navbar-expand-toggle">
 							<i class="fa fa-bars icon"></i>
 						</button>
-						<ol class="breadcrumb navbar-breadcrumb">
-							<li class="active" style="width: 150px; text-align: center;">
-								<a href="http://www.baidu.com">
-									<p class="{true:'active',false:'inactive'}[show.isActive0]"
-										onclick="changeBar(0)">供配电系统</p>
-							</a>
-							</li>
-						</ol>
-						<ol class="breadcrumb navbar-breadcrumb">
-							<li class="active" style="width: 150px; text-align: center;">
-								<a href="">
-									<p class="{true:'active',false:'inactive'}[show.isActive1]"
-										onclick="changeBar(1)">给排水系统</p>
-							</a>
-							</li>
-						</ol>
-						<ol class="breadcrumb navbar-breadcrumb">
-							<li class="active" style="width: 150px; text-align: center;">
-								<a href="">
-									<p class="{true:'active',false:'inactive'}[show.isActive2]"
-										onclick="changeBar(2)">中央空调系统</p>
-							</a>
-							</li>
-						</ol>
-						<ol class="breadcrumb navbar-breadcrumb">
-							<li class="active" style="width: 150px; text-align: center;">
-								<a href=""">
-									<p class="{true:'active',false:'inactive'}[show.isActive3]"
-										onclick="changeBar(3)">电梯系统</p>
-							</a>
-							</li>
-						</ol>
-						<ol class="breadcrumb navbar-breadcrumb">
-							<li class="active" style="width: 150px; text-align: center;">
-								<a href="">
-									<p class="{true:'active',false:'inactive'}[show.isActive4]"
-										onclick="changeBar(4)">消防系统</p>
-							</a>
-							</li>
-						</ol>
-
 						<button type="button"
 							class="navbar-right-expand-toggle pull-right visible-xs">
 							<i class="fa fa-th icon"></i>
 						</button>
+						<ol class="breadcrumb navbar-breadcrumb">
+							<li >Dashboard</li>
+							<li class="active">Tabs & Steps</li>
+						</ol>
 					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<button type="button"
