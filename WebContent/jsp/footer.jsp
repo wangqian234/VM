@@ -20,5 +20,3 @@
 <script type="text/javascript" src="${ctx}/lib/js/ace/ace.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/ace/mode-html.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/ace/theme-github.js"></script>
-
-
