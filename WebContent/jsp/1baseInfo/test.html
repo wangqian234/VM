@@ -5,9 +5,7 @@
             <!-- <div class="card-jumbotron no-padding">
                 <canvas id="jumbotron-line-chart" class="chart no-padding"></canvas>
             </div> -->
-            <div id="container1" style="width: 250px; height: 400px; margin: 0 auto;"></div>
-             <div id="container2" style="width: 250px; height: 400px; margin: 0 auto;"></div>
-              <div id="container3" style="width: 250px; height: 400px; margin: 0 auto;"></div>
+            <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
             <div class="card-body half-padding">
                 <h4 class="float-left no-margin font-weight-300">Profits</h4>
                 <h2 class="float-right no-margin font-weight-300">$3200</h2>
@@ -16,7 +14,6 @@
         </div>
     </div>
 </div>
-
 <script language="JavaScript">
 $(document).ready(function() {  
    var chart = {
@@ -90,9 +87,8 @@ $(document).ready(function() {
    json.plotOptions = plotOptions;
    json.credits = credits;
    json.series = series;
-   $('#container1').highcharts(json);
-   $('#container2').highcharts(json);
-   $('#container3').highcharts(json);
+   $('#container').highcharts(json);
+
   
 });
 </script>

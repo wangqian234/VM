@@ -10,6 +10,7 @@
 <div class="container-fluid">
 	<div class="side-body padding-top">
 	<section id="test" class="row"  ng-app="test" style="min-height: 40px;">
+	
 	<div ng-view></div>
 	</section> 
 	</div>

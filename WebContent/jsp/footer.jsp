@@ -3,7 +3,11 @@
 <!-- <footer> </footer> -->
 <script type="text/javascript" src="${ctx}/lib/js/jquery.min.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="${ctx}/lib/js/Chart.min.js"></script>
+<script type="text/javascript" src="${ctx}/js/app.js"></script> 
+<script type="text/javascript" src="${ctx}/js/lib/angular/angular.js"></script>
+<script type="text/javascript" src="${ctx}/js/lib/highcharts.js"></script>
+<script type="text/javascript"
+	src="${ctx}/js/lib/angular/angular-route.js"></script>
 <script type="text/javascript"
 	src="${ctx}/lib/js/bootstrap-switch.min.js"></script>
 <script type="text/javascript"
@@ -16,9 +20,3 @@
 <script type="text/javascript" src="${ctx}/lib/js/ace/ace.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/ace/mode-html.js"></script>
 <script type="text/javascript" src="${ctx}/lib/js/ace/theme-github.js"></script>
-<script type="text/javascript" src="${ctx}/js/lib/angular/angular.js"></script>
-<script type="text/javascript" src="${ctx}/js/lib/highcharts.js"></script>
-<script type="text/javascript"
-	src="${ctx}/js/lib/angular/angular-route.js"></script>
-<!-- Javascript -->
-<script type="text/javascript" src="${ctx}/js/app.js"></script> 

@@ -68,17 +68,20 @@ app.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.when('/testIndex', {
 		templateUrl : '/VM/jsp/1baseInfo/test.html',
 		controller : 'baseInfoController'
+	}).when('/qingyuan', {
+		templateUrl : '/VM/jsp/1baseInfo/baseInfo.html',
+		controller : 'baseInfoController'
 	})
 } ]);
 
-app.constant('baseUrl', '/lckywx/');
+app.constant('baseUrl', '/VM/');
 app.factory('services', [ '$http', 'baseUrl', function($http, baseUrl) {
 	var services = {};
 	// zq添加班车定制需求
-	services.addBusNeed = function(data) {
+	services.selectBaseList = function(data) {
 		return $http({
 			method : 'post',
-			url : baseUrl + 'busNeed/addBusNeed.do',
+			url : baseUrl + 'baseInfoController/selectBaseList.do',
 			data : data
 		});
 	};
@@ -89,11 +92,48 @@ app.controller('baseInfoController', [ '$scope', 'services', '$location',
 		function($scope, services, $location) {
 			var baseInfo = $scope;
 
+			baseInfo.selectBaseList = function() {
+				services.selectBaseList({
+
+				}).success(function(data) {
+
+				});
+			}
+
+			baseInfo.show = function(data) {
+				alert("fsdf");
+			}
+
+			baseInfo.change = function(index) {
+				var oObj = window.event.srcElement;
+				// alert(change.tagName.toLowerCase());
+				if (oObj.tagName.toLowerCase() == "td") {
+					var oTr = oObj.parentNode;
+					for (var i = 1; i < document.all.infoList.rows.length; i++) {
+						document.all.infoList.rows[i].style.backgroundColor = "";
+						document.all.infoList.rows[i].tag = false;
+					}
+					oTr.style.backgroundColor = "#EAEAEA";
+					oTr.tag = true;
+				}
+			}
+			baseInfo.selectEquipList=function(data){
+				
+				alert(data);
+			}
 			// zq初始化
 			function initPage() {
 				console.log("初始化页面信息");
 				if ($location.path().indexOf('/testIndex') == 0) {
-					
+
+				} else if ($location.path().indexOf('/qingyuan') == 0) {
+					baseInfo.show = {
+						isActive0 : true,
+						isActive1 : false,
+						isActive2 : false,
+						isActive3 : false,
+						isActive4 : false
+					}
 				}
 			}
 			initPage();
